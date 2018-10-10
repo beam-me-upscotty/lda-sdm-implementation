@@ -139,7 +139,7 @@ public class Controller {
 
     private void buildingModifyViewController(int buildingChoice) {
         Building building = repository.getBuildings().get(buildingChoice);
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = getScanner();
         System.out.println("Which field would you like to modify?");
         System.out.print("1. Name\n2. Load\n3. Location\nEnter your choice: ");
         int choice = sc.nextInt();

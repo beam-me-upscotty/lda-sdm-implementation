@@ -1,8 +1,7 @@
 package com.ClassDiagrams.Design.Models;
 
-import java.util.Scanner;
-
 import static java.lang.System.out;
+import static com.ClassDiagrams.Design.InputClient.getScanner;
 
 public class Transformer
 {
@@ -32,29 +31,28 @@ public class Transformer
 	}
 	public void modify()
 	{
-		Scanner sc = new Scanner(System.in);
 		out.println("Which field would you like to modify?");
 		out.print("1. Name\n2. KVA\n3. Location\nEnter your choice: ");
-		int choice = sc.nextInt();
+		int choice = getScanner().nextInt();
 		switch(choice)
 		{
 			case 1: out.print("Enter the modified name: ");
-				String n = sc.nextLine();
+				String n = getScanner().nextLine();
 				System.out.println("The name of transformer has been changed from " + name + "to " + n);
 				name = n;
 				break;
 			case 2: out.print("Enter the modified kVA: ");
-				float kva = sc.nextFloat();
+				float kva = getScanner().nextFloat();
 				System.out.println("The kVA of transformer has been changed from " + kVA + "to " + kva);
 				kVA = kva;
 				break;
 			case 3: out.print("Enter the modified latitude: ");
-				double l = sc.nextDouble();
+				double l = getScanner().nextDouble();
 				System.out.println("The latitude of transformer has been changed from " + latitude + "to " + l);
 				latitude = l;
 
 				out.print("Enter the modified longitude: ");
-				l = sc.nextDouble();
+				l = getScanner().nextDouble();
 				System.out.println("The longitude of transformer has been changed from " + longitude + "to " + l);
 				longitude = l;
 				break;
