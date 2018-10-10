@@ -39,18 +39,27 @@ public class Transformer
 		switch(choice)
 		{
 			case 1: out.print("Enter the modified name: ");
-					name = sc.nextLine();
-					break;
+				String n = sc.nextLine();
+				System.out.println("The name of transformer has been changed from " + name + "to " + n);
+				name = n;
+				break;
 			case 2: out.print("Enter the modified kVA: ");
-					kVA = sc.nextFloat();
-					break;
+				float kva = sc.nextFloat();
+				System.out.println("The kVA of transformer has been changed from " + kVA + "to " + kva);
+				kVA = kva;
+				break;
 			case 3: out.print("Enter the modified latitude: ");
-					latitude = sc.nextDouble();
-					out.print("Enter the modified longitude: ");
-					longitude = sc.nextDouble();
-					break;
+				double l = sc.nextDouble();
+				System.out.println("The latitude of transformer has been changed from " + latitude + "to " + l);
+				latitude = l;
+
+				out.print("Enter the modified longitude: ");
+				l = sc.nextDouble();
+				System.out.println("The longitude of transformer has been changed from " + longitude + "to " + l);
+				longitude = l;
+				break;
 			default:
-                out.println("Error! Incorrect choice.");
+				out.println("Error! Incorrect choice.");
 		}
 	}
 	public float getLoad()
@@ -79,9 +88,8 @@ public class Transformer
 		this.status = status;
 	}
 
-    @Override
-    public boolean equals(Object obj) {
-        return ((Transformer)obj).ID == this.ID;
-    }
+	@Override
+	public boolean equals(Object obj) {
+		return ((Transformer)obj).ID == this.ID;
+	}
 }
-
