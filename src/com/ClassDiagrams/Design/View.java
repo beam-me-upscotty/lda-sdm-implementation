@@ -44,6 +44,7 @@ public class View {
                     return;
             }else{
                 controller.adminViewController();
+                return;
             }
         }
     }
@@ -60,6 +61,7 @@ public class View {
                     return;
             }else{
                 controller.technicianViewController();
+                return;
             }
         }
     }

@@ -180,7 +180,7 @@ public class Controller {
     }
 
     private void buildingShiftProcedure(int b, int t) {
-        if(repository.getConnectionFor(repository.getBuildings().get(b),repository.getTransformers().get(t)).isStatus())
+        if (repository.getConnectionFor(repository.getBuildings().get(b), repository.getTransformers().get(t)).isStatus())
             out.println("Already Connected");
         else{
             if(repository.getTransformers().get(t).getkVA()*0.8 >repository.getTransformers().get(t).getLoad() + repository.getBuildings().get(b).getLoad()){
@@ -196,20 +196,27 @@ public class Controller {
     }
 
     private void toggleATransformer(int i) {
-        repository.getTransformers().get(i).toggle();
-        out.println(repository.getTransformers().get(i) + " is "+ (repository.getTransformers().get(i).getStatus()?"on":"off"));
-        if(repository.getTransformers().get(i).getStatus()){
+        Transformer transformer = repository.getTransformers().get(i);
+        transformer.toggle();
+        out.println(transformer + " is "+ (transformer.getStatus()?"on":"off"));
+        if(transformer.getStatus()){
             for(int b = 0;b < repository.getBuildings().size();b++){
-                if(repository.getBuildings().get(b).getDefaultTransformer().equals(repository.getTransformers().get(i)))
+                if(repository.getBuildings().get(b).getDefaultTransformer().equals(transformer))
                     buildingShiftProcedure(b,i);
             }
         }else {
-            for (int t = 0; t < repository.getTransformers().size(); t++) {
-                if(t != i) {
-                    for (int b = 0; b < repository.getBuildings().size(); b++) {
-                        if (repository.getBuildings().get(b).getDefaultTransformer().equals(repository.getTransformers().get(i)))
-                            buildingShiftProcedure(b, i);
+            for (int b  = 0; b < repository.getBuildings().size(); b++) {
+                if(repository.getActiveConnection(repository.getBuildings().get(b)).getTransformer().equals(transformer)){
+                    repository.getActiveConnection(repository.getBuildings().get(b)).setStatus(false);
+                    float max = 0;
+                    int imax = -1;
+                    for(int t=0;t < repository.getTransformers().size();t++){
+                        if(repository.getTransformers().get(t).getStatus() && repository.getTransformers().get(t).getkVA()>max){
+                            max = repository.getTransformers().get(t).getkVA();
+                            imax = t;
+                        }
                     }
+                    buildingShiftProcedure(b,imax);
                 }
             }
         }
