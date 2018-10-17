@@ -4,9 +4,12 @@
     <list default="true" id="72c989ac-12cc-488f-ab6f-930344912f3a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Implementation of Assignment 4 and 5/com/ClassDiagrams/Design/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Implementation of Assignment 4 and 5/com/ClassDiagrams/Design/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Implementation of Assignment 4 and 5/com/ClassDiagrams/Design/DataRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Implementation of Assignment 4 and 5/com/ClassDiagrams/Design/DataRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Implementation of Assignment 4 and 5/com/ClassDiagrams/Design/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Implementation of Assignment 4 and 5/com/ClassDiagrams/Design/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Implementation of Assignment 4 and 5/com/ClassDiagrams/Design/Models/Transformer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Implementation of Assignment 4 and 5/com/ClassDiagrams/Design/Models/Transformer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Implementation of Assignment 4 and 5/com/ClassDiagrams/Design/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Implementation of Assignment 4 and 5/com/ClassDiagrams/Design/Models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Implementation of Assignment 4 and 5/com/ClassDiagrams/Design/View.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ClassDiagrams/Design/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ClassDiagrams/Design/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ClassDiagrams/Design/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ClassDiagrams/Design/View.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,34 +22,37 @@
     <session id="-1119403776">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="LoadDistributionApplication" value="1" />
           <entry key="iml" value="2" />
-          <entry key="java" value="55" />
+          <entry key="java" value="71" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="56" />
+          <entry key="JAVA" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5488" />
+          <entry key="java" value="5494" />
+          <entry key="txt" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5488" />
+          <entry key="JAVA" value="5494" />
+          <entry key="PLAIN_TEXT" value="46" />
         </counts>
       </usages-collector>
     </session>
@@ -84,20 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ClassDiagrams/Design/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="45">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ClassDiagrams/Design/View.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1298">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -105,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ClassDiagrams/Design/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-35">
-              <caret line="211" column="26" lean-forward="true" selection-start-line="211" selection-start-column="26" selection-end-line="211" selection-end-column="26" />
+            <state relative-caret-position="93">
+              <caret line="264" selection-start-line="264" selection-end-line="264" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,17 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ClassDiagrams/Design/DataRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ClassDiagrams/Design/InputClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            <state relative-caret-position="206">
+              <caret line="90" column="39" lean-forward="true" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -164,7 +149,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/ClassDiagrams/Desgin/Main.java" />
         <option value="$PROJECT_DIR$/src/com/ClassDiagrams/Design/Controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/com/ClassDiagrams/Design/Main.java" />
         <option value="$PROJECT_DIR$/src/com/ClassDiagrams/Design/Models/Admin.java" />
         <option value="$PROJECT_DIR$/src/com/ClassDiagrams/Design/Views/View.java" />
         <option value="$PROJECT_DIR$/src/com/ClassDiagrams/Design/Models/Technician.java" />
@@ -175,6 +159,7 @@
         <option value="$PROJECT_DIR$/src/com/ClassDiagrams/Design/Models/User.java" />
         <option value="$PROJECT_DIR$/src/com/ClassDiagrams/Design/Models/Transformer.java" />
         <option value="$PROJECT_DIR$/src/com/ClassDiagrams/Design/View.java" />
+        <option value="$PROJECT_DIR$/src/com/ClassDiagrams/Design/Main.java" />
         <option value="$PROJECT_DIR$/src/com/ClassDiagrams/Design/DataRepository.java" />
         <option value="$PROJECT_DIR$/src/com/ClassDiagrams/Design/Controller.java" />
       </list>
@@ -191,37 +176,13 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Implementation of Assignment 4 and 5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Implementation of Assignment 4 and 5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Implementation of Assignment 4 and 5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Implementation of Assignment 4 and 5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Implementation of Assignment 4 and 5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Implementation of Assignment 4 and 5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Design" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539193732072" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539339494016" />
+    <property name="full.screen.before.presentation.mode" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -309,6 +270,14 @@
       <option name="presentableId" value="Default" />
       <updated>1539077141156</updated>
     </task>
+    <task id="LOCAL-00001" summary="Toggle a transformer to off (fix)">
+      <created>1539339570228</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539339570228</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -319,7 +288,36 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Learn" order="3" weight="0.32954547" />
       <window_info id="Capture Tool" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25378788" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.2621212" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32894737" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.32894737" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.32952693" />
+      <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.55921054" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Learn" order="3" weight="0.32954547" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2532943" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.3289689" />
@@ -341,10 +339,14 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Toggle a transformer to off (fix)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Toggle a transformer to off (fix)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/ClassDiagrams/Design/Worker/LoadDistributionApplication" />
@@ -388,13 +390,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ClassDiagrams/Design/InputClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ClassDiagrams/Design/Models/Transformer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -405,34 +400,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ClassDiagrams/Design/DataRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ClassDiagrams/Design/InputClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="110">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ClassDiagrams/Design/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ClassDiagrams/Design/View.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1298">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="88">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ClassDiagrams/Design/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ClassDiagrams/Design/DataRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="206">
+          <caret line="90" column="39" lean-forward="true" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ClassDiagrams/Design/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
-          <caret line="211" column="26" lean-forward="true" selection-start-line="211" selection-start-column="26" selection-end-line="211" selection-end-column="26" />
+        <state relative-caret-position="93">
+          <caret line="264" selection-start-line="264" selection-end-line="264" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

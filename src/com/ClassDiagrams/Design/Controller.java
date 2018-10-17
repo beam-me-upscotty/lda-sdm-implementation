@@ -262,7 +262,6 @@ public class Controller {
         }else {
             for (int b  = 0; b < repository.getBuildings().size(); b++) {
                 if(repository.getActiveConnection(repository.getBuildings().get(b)).getTransformer().equals(transformer)){
-                    repository.getActiveConnection(repository.getBuildings().get(b)).setStatus(false);
                     float max = 0;
                     int imax = -1;
                     for(int t=0;t < repository.getTransformers().size();t++){
