@@ -10,12 +10,11 @@ public class Controller {
     private final DataRepository repository;
     private User activeUser;
 
-    public Controller(DataRepository repository){
-        this.repository = repository;
+    public Controller(){
+        this.repository = DataRepository.getInstance();
     }
 
-
-    public Admin checkAdminUser(String username, String password, String adminPassword) {
+    private Admin checkAdminUser(String username, String password, String adminPassword) {
         for(Admin a: repository.getAdmins()){
             if(a.login(username,password,adminPassword)) {
                 out.println(a+" has logged in");
@@ -26,7 +25,7 @@ public class Controller {
         return null;
     }
 
-    public Technician checkTechnicianUser(String username, String password) {
+    private Technician checkTechnicianUser(String username, String password) {
         for(Technician t: repository.getTechnicians()){
             if(t.login(username,password)){
                 out.println(t+" has logged in");
@@ -37,7 +36,7 @@ public class Controller {
         return null;
     }
 
-    public void adminViewController(){
+    private void adminViewController(){
         while(true) {
             out.println("Welcome "+activeUser.getName());
             out.println("Menu");
@@ -94,7 +93,7 @@ public class Controller {
         }
     }
 
-    public void technicianViewController() {
+    private void technicianViewController() {
         while(true) {
             out.println("Welcome "+activeUser.getName());
             out.println("Menu");
@@ -127,6 +126,62 @@ public class Controller {
                     return;
                 default:
                     out.println("Incorrect input");
+            }
+        }
+    }
+
+    public void mainView(){
+        while(true){
+            out.println("Welcome to load Distribution Application");
+            out.println("Please choose type of user checkCredentials");
+            out.println("1. Administrator");
+            out.println("2. Technician");
+            out.println("3. Exit");
+            switch (getScanner().nextInt()){
+                case 1:
+                    administratorLoginView();
+                case 2:
+                    technicianloginView();
+                    break;
+                case 3: out.println("Thank you for using LDA. See you again");
+                    return;
+                default: out.println("ERROR: Incorrect input");
+            }
+        }
+    }
+
+    private void administratorLoginView(){
+        while(true) {
+            out.println("Enter user name");
+            String username = getScanner().next();
+            out.println("Enter password");
+            String password = getScanner().next();
+            out.println("Enter admin password");
+            String adminPassword = getScanner().next();
+            if(checkAdminUser(username,password,adminPassword) == null){
+                out.println("Can't find User, want to try again?(1/0)");
+                if(getScanner().nextInt()!=1)
+                    return;
+            }else{
+                adminViewController();
+                return;
+            }
+        }
+    }
+
+    private void technicianloginView(){
+        while(true) {
+            out.println("Enter user name");
+            String username = getScanner().next();
+            out.println("Enter password");
+            String password = getScanner().next();
+            if(checkTechnicianUser(username,password)== null){
+                out.println("Can't find User, want to try again?(1/0)");
+                if(getScanner().nextInt()!=1)
+                    return;
+            }else{
+                technicianViewController();
+                return;
             }
         }
     }
