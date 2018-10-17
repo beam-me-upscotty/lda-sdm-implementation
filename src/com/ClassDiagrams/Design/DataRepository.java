@@ -11,11 +11,23 @@ public class DataRepository {
     private List<Technician> technicians;
     private List<Admin> admins;
 
-    public final void initialize(){
-        getTransformers();
+    private static DataRepository repository;
+    
+    private DataRepository() {
+    	getTransformers();
         getBuildings();
         getConnections();
+        getTechnicians();
+        getAdmins();
     }
+
+    public static DataRepository getInstance() {
+    	if(repository==null) {
+    		repository = new DataRepository();
+    	}
+    	return repository;
+    }
+
     public final List<Transformer> getTransformers() {
         if(transformers == null){
             transformers = new ArrayList<Transformer>();
@@ -32,6 +44,7 @@ public class DataRepository {
         }
         return connections;
     }
+
     public final List<Building> getBuildings(){
         if(buildings == null){
             buildings = new ArrayList<Building>();
@@ -60,13 +73,19 @@ public class DataRepository {
     }
 
     public final void initializeConnections() {
-        initialize();
         for(Transformer t: transformers)
             for (Building b: buildings)
-                connections.add(new Connection(t,b));
+            {
+            	Connection c = new Connection(t, b);
+            	Transformer defaultTransformer = b.getDefaultTransformer();
+            	if (t == defaultTransformer)
+            	{
+            		c.setStatus(true);
+            		defaultTransformer.setLoad(defaultTransformer.getLoad() + b.getLoad());
+            	}
+            	connections.add(c);
+            }
     }
-
-
 
     public final Connection getActiveConnection(Building building) {
         for(Connection c : connections)

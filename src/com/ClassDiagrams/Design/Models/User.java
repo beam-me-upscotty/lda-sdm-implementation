@@ -62,4 +62,9 @@ public class User
 	{
 		return loggedIn;
 	}
+	
+	@Override
+	public String toString(){
+		return name+"("+email+")";
+	}
 }

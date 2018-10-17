@@ -27,7 +27,7 @@ public class Transformer
 		} else {
 			status = true;
 		}
-		out.println("STATUS of "+ this + " changed to "+status);
+		out.println("STATUS of "+ this.name + " changed to "+status);
 	}
 	public void modify()
 	{
