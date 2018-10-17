@@ -235,7 +235,7 @@ public class Controller {
     }
 
     private void buildingShiftProcedure(int b, int t) {
-        if (repository.getConnectionFor(repository.getBuildings().get(b), repository.getTransformers().get(t)).isStatus())
+        if (repository.getConnectionFor(repository.getBuildings().get(b), repository.getTransformers().get(t)).getStatus())
             out.println("Already Connected");
         else{
             if(repository.getTransformers().get(t).getkVA()*0.8 >repository.getTransformers().get(t).getLoad() + repository.getBuildings().get(b).getLoad()){

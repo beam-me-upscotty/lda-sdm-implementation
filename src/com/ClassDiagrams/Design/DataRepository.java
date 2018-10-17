@@ -89,7 +89,7 @@ public class DataRepository {
 
     public final Connection getActiveConnection(Building building) {
         for(Connection c : connections)
-            if(c.getBuilding() == building && c.isStatus())
+            if(c.getBuilding() == building && c.getStatus())
                 return c;
         return null;
     }

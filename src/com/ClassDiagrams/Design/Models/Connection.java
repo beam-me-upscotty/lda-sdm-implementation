@@ -27,9 +27,6 @@ public class Connection
 		return building;
 	}
 
-	public boolean isStatus() {
-		return status;
-	}
 
 	public void setStatus(boolean status) {
 		this.status = status;
@@ -43,8 +40,7 @@ public class Connection
 		this.distance = distance;
 	}
 
-	boolean getStatus()
-	{
+	public boolean getStatus() {
 		return status;
 	}
 }
